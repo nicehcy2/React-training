@@ -1,25 +1,20 @@
-import './App.css';
 import { Component } from 'react';
-import Counter from './03/Counter3'
+import './sass/materialize.scss';
+import './App.css';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 1,
-    };
-    this.increaseCount = this.increaseCount.bind(this);
-  }
-
-  increaseCount() {
-    this.setState(({ count }) => ({ count: count + 1 }));
-  }
-
   render() {
     return (
-      <Counter count={this.state.count} onAdd={this.increaseCount}  />
-    );
+      <div>
+        <nav>
+          <div className='nav-wrapper'>
+            <div>두잇! 리액트 시작하기</div>
+          </div>
+        </nav>
+        <h1>머티리얼 CSS</h1>
+      </div>
+    )
   }
 }
 
