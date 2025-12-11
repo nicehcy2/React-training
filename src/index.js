@@ -6,12 +6,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Library from './chapter_03/Library';
+
 // 리액트 엔진이 화면을 출력하는 코드입니다.
 // id가 root인 엘리먼트에 컴포넌트를 출력.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Library />
   </React.StrictMode>
 );
 
