@@ -7,15 +7,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Library from './chapter_03/Library';
+import Clock from './chapter_04/Clock';
 
 // 리액트 엔진이 화면을 출력하는 코드입니다.
 // id가 root인 엘리먼트에 컴포넌트를 출력.
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Library />
-  </React.StrictMode>
-);
+setInterval(() => {
+  root.render(
+    <React.StrictMode>
+      <Clock />
+    </React.StrictMode>
+  );
+}, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
